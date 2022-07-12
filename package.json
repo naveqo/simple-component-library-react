@@ -1,6 +1,8 @@
 {
   "name": "simple-component-library-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "typed:css:module": "tcm src",
     "build": "run-p build:*",
