@@ -1,14 +1,8 @@
 {
-  "name": "simple-component-library-react",
-  "version": "0.1.1",
+  "name": "@naveqo/simple-component-library-react",
+  "version": "0.0.1",
   "license": "MIT",
   "private": false,
-  "scripts": {
-    "typed:css:module": "tcm src",
-    "build": "run-p build:*",
-    "build:scripts": "vite build",
-    "build:types": "tsc --emitDeclarationOnly && tsc-alias"
-  },
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -23,6 +17,21 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveqo/simple-component-library-react.git"
+  },
+  "author": "Atsushi Watanabe",
+  "bugs": {
+    "url": "https://github.com/naveqo/simple-component-library-react/issues"
+  },
+  "homepage": "https://github.com/naveqo/simple-component-library-react#readme",
+  "scripts": {
+    "typed:css:module": "tcm src",
+    "build": "run-p build:*",
+    "build:scripts": "vite build",
+    "build:types": "tsc --emitDeclarationOnly && tsc-alias"
+  },
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^18.0.3",
