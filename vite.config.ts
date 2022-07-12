@@ -19,7 +19,6 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src', 'index.ts'),
       formats: ['es', 'cjs'],
       fileName: (ext) => `index.${ext}.js`,
-      // for UMD name: 'GlobalName'
     },
     rollupOptions: {
       external: ['react', 'react-dom']
