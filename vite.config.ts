@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import * as path from 'path'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import * as path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,7 +18,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src', 'index.ts'),
       formats: ['es', 'cjs'],
-      fileName: (ext) => `index.${ext}.js`,
+      fileName: (ext) => `index.${ext}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom']
@@ -26,4 +26,4 @@ export default defineConfig({
     target: 'esnext',
     sourcemap: true
   }
-})
+});
