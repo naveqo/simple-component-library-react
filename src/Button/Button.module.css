@@ -2,11 +2,33 @@
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
-  border-radius: 3em;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1;
   color: white;
+}
+
+/* size */
+.small {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.medium {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+/* variants */
+.block {
+  width: 100%;
+}
+
+/* colorScheme */
+.blue {
+  background-color: var(--color-base-blue-500);
 }

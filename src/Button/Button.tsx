@@ -1,11 +1,30 @@
 import React from 'react';
+import clsx from 'clsx';
+import './../global.css';
 import style from './Button.module.css';
 
-type Props = {
+type Props = Omit<React.ComponentPropsWithoutRef<'button'>, 'className'> & {
   size?: 'small' | 'medium';
-  children: React.ReactNode;
+  colorScheme?: 'blue';
+  blocked?: boolean;
 };
 
-export const Button = (props: Props) => {
-  return <button className={style.button}>{props.children}</button>;
+export const Button: React.FC<Props> = ({
+  size,
+  colorScheme,
+  blocked,
+  ...props
+}) => {
+  return (
+    <button
+      className={clsx(
+        style.button,
+        style[`${size !== undefined ? size : 'medium'}`],
+        style[`${colorScheme !== undefined ? colorScheme : 'blue'}`],
+        `${blocked && style.block}`
+      )}
+    >
+      {props.children}
+    </button>
+  );
 };
